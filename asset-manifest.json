@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.477ed4db.css",
-    "main.js": "/static/js/main.1a207510.js",
-    "static/js/453.f87592ff.chunk.js": "/static/js/453.f87592ff.chunk.js",
+    "main.css": "/static/css/main.b0410b4d.css",
+    "main.js": "/static/js/main.43c63a22.js",
+    "static/js/453.329a1ee4.chunk.js": "/static/js/453.329a1ee4.chunk.js",
     "static/media/snakefeet.png": "/static/media/snakefeet.c38874d82dc725094fdf.png",
     "static/media/me.jpg": "/static/media/me.d25ffcd016b06d92c541.jpg",
-    "static/media/yalemedicine.png": "/static/media/yalemedicine.110fea115389da649236.png",
+    "static/media/yalemed.jpeg": "/static/media/yalemed.fad356a2e693f03114a5.jpeg",
     "index.html": "/index.html",
-    "main.477ed4db.css.map": "/static/css/main.477ed4db.css.map",
-    "main.1a207510.js.map": "/static/js/main.1a207510.js.map",
-    "453.f87592ff.chunk.js.map": "/static/js/453.f87592ff.chunk.js.map"
+    "main.b0410b4d.css.map": "/static/css/main.b0410b4d.css.map",
+    "main.43c63a22.js.map": "/static/js/main.43c63a22.js.map",
+    "453.329a1ee4.chunk.js.map": "/static/js/453.329a1ee4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.477ed4db.css",
-    "static/js/main.1a207510.js"
+    "static/css/main.b0410b4d.css",
+    "static/js/main.43c63a22.js"
   ]
 }
