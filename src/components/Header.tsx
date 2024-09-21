@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { IoMdDownload } from "react-icons/io";
 
 const Header = () => {
     const [toggle, setToggle] = useState(false);
@@ -25,7 +26,7 @@ const Header = () => {
                         <a href="/#contact">Contact</a>
                     </li>
                     <li>
-                        <a href="#resume -link" target="_blank" rel="noreferrer">
+                        <a  target="_blank" rel="noreferrer"> {/*href="#resume -link"*/}
                             Resume
                         </a>
                     </li>
