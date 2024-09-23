@@ -10,26 +10,21 @@ const About = () => {
                     </h2>
 
                     <p className="pb-5">
-                        Hi there! I'm Max Ohm.  
+                        Welcome to my website!
                     </p>
                     <p className="pb-5">
-                        I am proficient in  a bunch of stuff
+                        I'm a passionate student with a broad interest in anything related to computer science or mathematics. My primary focus has been on backend architecture, cybersecurity, and game development. I thought I'd explore web development a bit, which has led to the creation of this site. Feel free to reach out via the contact information below!
                     </p>
-
                     <p>
-                        And more stuff
-                    </p>
-
-                    <p>
-                        In my spare time I do more stuff
+                        Currently, I'm pursuing a B.S. in Computer Science & Mathematics at Yale University. In my spare time I read, work on personal prjects, or go on outdoor trips with the Yale Climbing Team.
                     </p>
                 </div>
 
-                <div className="about-img hidden md:block">
+                {/* <div className="about-img hidden md:block">
                     <p>
                         Test test
                     </p>
-                </div>
+                </div> */}
             </div>
         </section>
     );

@@ -16,17 +16,17 @@ const Header = () => {
             {/* Desktop Nav */}
             <nav className="hidden md:block">
                 <ul className="flex">
-                    <li>
-                        <a className="font-bold" href="/#about">About</a>
+                    <li>    
+                        <a className="font-bold hover:text-[#fe93de]" href="/#about">About</a>
                     </li>
                     <li>
-                        <a className="font-bold" href="/#projects">Projects</a>
+                        <a className="font-bold hover:text-[#fe93de]" href="/#projects">Projects</a>
                     </li>
                     <li>
-                        <a className="font-bold" href="/#contact">Contact</a>
+                        <a className="font-bold hover:text-[#fe93de]" href="/#contact">Contact</a>
                     </li>
                     <li>
-                        <a className="font-bold" target="_blank" rel="noreferrer"> {/*href="#resume -link"*/}
+                        <a className="font-bold hover:text-[#fe93de]" target="_blank" rel="noreferrer"> {/*href="#resume -link"*/}
                             Resume
                         </a>
                     </li>
@@ -35,20 +35,20 @@ const Header = () => {
 
             {/* Mobile Nav */}
             <nav
-                className={!toggle ? "mobile-nav left-[-100%]" : "mobile-nav left-0"}
+                className={!toggle ? "mobile-nav left-[-100%] bg-secondary" : "mobile-nav left-0 bg-secondary"}
             >
-                <ul className="flex flex-col">
+                <ul className="flex flex-col bg-secondary">
                     <li>
-                        <a href="/#about">About</a>
+                        <a className="font-bold hover:text-[#fe93de]" href="/#about">About</a>
                     </li>
                     <li>
-                        <a href="/#projects">Projects</a>
+                        <a className="font-bold hover:text-[#fe93de]" href="/#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="/#contact">Contact</a>
+                        <a className="font-bold hover:text-[#fe93de]" href="/#contact">Contact</a>
                     </li>
                     <li>
-                        <a href="/#resume">Resume</a>
+                        <a className="font-bold hover:text-[#fe93de]" href="/#resume">Resume</a>
                     </li>
                 </ul>
             </nav>

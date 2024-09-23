@@ -15,9 +15,9 @@ const Hero = () => {
                         Hi, <br />I'm Max. <br />
                     </h1>
 
-                    <p className="py-5">
-                        Welcome to my personal website.
-                    </p>
+                    {/* <p className="py-5">
+                        Welcome to my personal website! I'm a passionate 
+                    </p> */}
 
                     <div className="flex py-5 ">
                         <a
@@ -37,12 +37,10 @@ const Hero = () => {
                         </a>
                     </div>
 
-                    <div className="pt-10">
+                    <div className="py-10">
                         <a
                             href="/#projects"
-                            className="hover:bg-[#fe93de] bg-accent border-2 rounded text-black px-8 py-5 font-bold"
-                            // className="hover:bg-transparent bg-accent border-2 border-[#ffafe7] rounded text-black px-8 py-5 font-bold"
-
+                            className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-8 py-5 font-bold"
                         >
                             My Work
                         </a>

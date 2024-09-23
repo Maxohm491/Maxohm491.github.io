@@ -9,7 +9,7 @@ const Footer = () => {
       <div
         className="text-center text-black px-6"> |
       </div>
-      <a className="font-bold text-accent hover:text-[#fe93de] underline" href="https://github.com/Maxohm491/Maxohm491.github.io/tree/master" target="_blank">
+      <a className="font-bold text-black hover:text-[#fe93de] underline" href="https://github.com/Maxohm491/Maxohm491.github.io/tree/master" target="_blank">
         Source Code
       </a>
     </div>
