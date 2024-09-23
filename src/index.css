@@ -36,24 +36,38 @@ code {
   color: #7477FF;
 }  */
 .bg-primary {
-  background: #fae7f8;
+  background: #f6f7f9;
 }
 
 .bg-secondary {
-  background: #f7ceea;
+  background: #ffffff;
 }
 
 .bg-accent {
   background: #ffafe7;
 }
 
+.bg-hover {
+  background: #fe93de;
+}
+
 .text-accent {
-  color: #ff55e0;
+  color: #ffafe7;
 } 
+
+.border-accent {
+  border-color: #ffafe7;
+}
+
+.text-hover {
+  --tw-text-opacity: 1;
+  color: #fe93de /* #000000 */;
+}
 
 .mobile-nav {
   @apply block md:hidden fixed top-10 py-2 w-full h-full bg-gray-900 duration-500;
 } 
+
 
 nav li a {
   @apply px-4 py-5 text-lg;

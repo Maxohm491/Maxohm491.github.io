@@ -8,8 +8,8 @@ const Header = () => {
     const handleToggle = () => setToggle(!toggle);
 
     return (
-        <header className="flex justify-between px-5 py-2 bg-secondary text-white fixed w-full z-10">
-            <a href="/" className="logo text-2xl font-bold text-accent">
+        <header className="flex justify-between px-5 py-2 bg-secondary text-black fixed w-full z-10">
+            <a href="/" className="logo text-2xl font-bold text-black">
                 Max Ohm
             </a>
 
@@ -17,16 +17,16 @@ const Header = () => {
             <nav className="hidden md:block">
                 <ul className="flex">
                     <li>
-                        <a href="/#about">About</a>
+                        <a className="font-bold" href="/#about">About</a>
                     </li>
                     <li>
-                        <a href="/#projects">Projects</a>
+                        <a className="font-bold" href="/#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="/#contact">Contact</a>
+                        <a className="font-bold" href="/#contact">Contact</a>
                     </li>
                     <li>
-                        <a  target="_blank" rel="noreferrer"> {/*href="#resume -link"*/}
+                        <a className="font-bold" target="_blank" rel="noreferrer"> {/*href="#resume -link"*/}
                             Resume
                         </a>
                     </li>
