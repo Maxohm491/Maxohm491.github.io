@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
     return (
-        <section className="bg-secondary text-white px-5 py-32" id="about">
+        <section className="bg-secondary text-black px-5 py-32" id="about">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between">
                 <div className="about-info">
                     <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-indigo-600 pb-2">
@@ -10,7 +10,7 @@ const About = () => {
                     </h2>
 
                     <p className="pb-5">
-                        Hi there! I'm Max Ohm. hihi
+                        Hi there! I'm Max Ohm.  
                     </p>
                     <p className="pb-5">
                         I am proficient in  a bunch of stuff

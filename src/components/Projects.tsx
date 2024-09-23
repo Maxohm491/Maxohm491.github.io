@@ -37,7 +37,7 @@ const Projects = () => {
     ];
 
     return (
-        <section className="bg-primary text-white px-5 py-32" id="projects">
+        <section className="bg-primary text-black px-5 py-32" id="projects">
             <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
                 <div className="about-info mb-5">
                     <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-indigo-600 pb-2">
@@ -58,7 +58,7 @@ const Projects = () => {
                         <div className="relative flex justify-center items-center" key={i}>
                             <img src={project.img} alt={project.title} />
                             <div className="flex absolute left-0 right-0 top-0 bottom-0 mx-auto bg-primary opacity-0 duration-500 justify-center flex-col hover:opacity-95 ">
-                                <p className="py-5 text-center font-bold px-2 text-white">
+                                <p className="py-5 text-center font-bold px-2 text-black">
                                     {project.desc}
                                 </p>
 
@@ -66,7 +66,7 @@ const Projects = () => {
                                     <a
                                         href={project.link}
                                         target="_blank"
-                                        className="bg-accent border-2 border-[#7477FF] text-white px-5 py-2 hover:bg-transparent font-bold duration-250"
+                                        className="bg-accent border-2 border-[#7477FF] text-black px-5 py-2 hover:bg-transparent font-bold duration-250"
                                     >
                                         {project.link_name}
                                     </a>

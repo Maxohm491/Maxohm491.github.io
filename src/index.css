@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Courier New', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+body {
+  @apply font-sans;
 }
 
 code {
@@ -17,7 +20,7 @@ code {
 }
 
 /* color */
-.bg-primary {
+/* .bg-primary {
   background: #0F172A;
 }
 
@@ -31,6 +34,21 @@ code {
 
 .text-accent {
   color: #7477FF;
+}  */
+.bg-primary {
+  background: #fae7f8;
+}
+
+.bg-secondary {
+  background: #f7ceea;
+}
+
+.bg-accent {
+  background: #ffafe7;
+}
+
+.text-accent {
+  color: #ff55e0;
 } 
 
 .mobile-nav {
@@ -40,6 +58,10 @@ code {
 nav li a {
   @apply px-4 py-5 text-lg;
 }
+
+/* .custom-position {
+  object-position: 60% -3px;
+} */
 
 nav li a:hover {
   color: #7477FF;
