@@ -7,6 +7,7 @@ import jhuapl from "../assets/jhuapl.png";
 const Projects = () => {
     const projects = [
         {
+            date: "July 2023 - May 2024",
             img: snakefeet,
             title: "Snakefeet Studios",
             desc: " I programmed at 11 person indie game studio, using Unity and focusing mainly on scalable multiplayer systems. ",
@@ -14,6 +15,7 @@ const Projects = () => {
             link_name: "Website",
         },
         {
+            date: "April 2024 - Present",
             img: yalemedicine,
             title: "OBE Clinical Study",
             desc: " I worked with an MD/MS student at the Yale School of Medicine on a clincal study. We simulated out-of-body experiences (a common hallucination) in virtual reality! ",
@@ -21,6 +23,7 @@ const Projects = () => {
             link_name: "Code",
         },
         {
+            date: "July 2022 - August 2022",
             img: jhuapl,
             title: "JHUAPL Internship",
             desc: " I completed an 8-week internship at the Johns Hopkins University Applied Physics Laboratory, where I worked in the IT Service Desk division and developed an internal log summarization tool. ",
@@ -28,6 +31,7 @@ const Projects = () => {
             link_name: "Info",
         },
         {
+            date: "May 2024 - Present",
             img: grassroot,
             title: "Grassroot",
             desc: " I helped develop an iOS app for a startup, designed to streamline scheduling and business management for small home service companies. ",
@@ -58,7 +62,10 @@ const Projects = () => {
                         <div className="relative flex justify-center items-center" key={i}>
                             <img src={project.img} alt={project.title} />
                             <div className="flex absolute left-0 right-0 top-0 bottom-0 mx-auto bg-primary opacity-0 duration-500 justify-center flex-col hover:opacity-95 ">
-                                <p className="py-5 text-center font-bold px-2 text-black">
+                                <p className="text-center font-bold px-2 text-black">
+                                    {project.date}
+                                </p>
+                                <p className="py-4 text-left px-2 text-black">
                                     {project.desc}
                                 </p>
 
