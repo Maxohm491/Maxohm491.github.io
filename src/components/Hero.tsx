@@ -28,13 +28,13 @@ const Hero = () => {
                             {" "}
                             <AiOutlineGithub size={40} />{" "}
                         </a>
-                        <a
+                        {/* <a
                             href="https://www.maxohm.com/"
                             className="pr-4 inline-block text-accent hover:text-[#fe93de]"
                         >
                             {" "}
                             <AiOutlineLinkedin size={40} />{" "}
-                        </a>
+                        </a> */}
                     </div>
 
                     <div className="py-10">

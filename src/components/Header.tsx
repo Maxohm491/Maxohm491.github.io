@@ -9,6 +9,7 @@ const Header = () => {
 
     return (
         <header className="flex justify-between px-5 py-2 bg-secondary text-black fixed w-full z-10">
+            {/* bg-secondary */}
             <a href="/" className="logo text-2xl font-bold text-black">
                 Max Ohm
             </a>
@@ -16,7 +17,7 @@ const Header = () => {
             {/* Desktop Nav */}
             <nav className="hidden md:block">
                 <ul className="flex">
-                    <li>    
+                    <li>
                         <a className="font-bold hover:text-[#fe93de]" href="/#about">About</a>
                     </li>
                     <li>
@@ -26,9 +27,12 @@ const Header = () => {
                         <a className="font-bold hover:text-[#fe93de]" href="/#contact">Contact</a>
                     </li>
                     <li>
-                        <a className="font-bold hover:text-[#fe93de]" target="_blank" rel="noreferrer"> {/*href="#resume -link"*/}
-                            Resume
+                        <a className="font-bold hover:text-[#fe93de]" target="_blank" href={require("../assets/files/Resume.pdf")} download="Max's Resume"> {/*href="#resume -link"*/}
+                            <span className="inline-flex space-x-2 items-center">
+                             <IoMdDownload /> <span> Resume </span> 
+                            </span>
                         </a>
+
                     </li>
                 </ul>
             </nav>
