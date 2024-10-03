@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.d52d96f1.css",
-    "main.js": "/static/js/main.c4e9821c.js",
+    "main.css": "/static/css/main.b30314b8.css",
+    "main.js": "/static/js/main.136e929b.js",
     "static/js/453.f87592ff.chunk.js": "/static/js/453.f87592ff.chunk.js",
     "static/media/snakefeet.png": "/static/media/snakefeet.c38874d82dc725094fdf.png",
     "static/media/circle.png": "/static/media/circle.34bbd44cc3e07f3f97c5.png",
+    "static/media/Resume.pdf": "/static/media/Resume.0ff756a98db0108483d9.pdf",
     "static/media/jhuapl.png": "/static/media/jhuapl.cb4b16849f940e6c3447.png",
     "static/media/yalemedlogo.png": "/static/media/yalemedlogo.7f4b428e8bc9d5648a3b.png",
     "index.html": "/index.html",
-    "main.d52d96f1.css.map": "/static/css/main.d52d96f1.css.map",
-    "main.c4e9821c.js.map": "/static/js/main.c4e9821c.js.map",
+    "main.b30314b8.css.map": "/static/css/main.b30314b8.css.map",
+    "main.136e929b.js.map": "/static/js/main.136e929b.js.map",
     "453.f87592ff.chunk.js.map": "/static/js/453.f87592ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d52d96f1.css",
-    "static/js/main.c4e9821c.js"
+    "static/css/main.b30314b8.css",
+    "static/js/main.136e929b.js"
   ]
 }
