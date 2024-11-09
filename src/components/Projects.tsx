@@ -1,5 +1,6 @@
 import React from "react";
 import snakefeet from "../assets/snakefeet.png";
+import itchio from "../assets/itchlogo.png";
 import yalemedicine from "../assets/yalemedlogo.png";
 import grassroot from "../assets/grassroot.png";
 import jhuapl from "../assets/jhuapl.png";
@@ -15,10 +16,18 @@ const Projects = () => {
             link_name: "Website",
         },
         {
+            date: "",
+            img: itchio,
+            title: "Game Jams",
+            desc: "I love participating in game jams as often as possible, with a team or alone! Most recently, my game was ranked in the top 3% of 1930 submissions in the Ludum Dare 56 game jam.",
+            link: "https://kirbyborgir.itch.io/",
+            link_name: "Live Games",
+        },
+        {
             date: "April 2024 - Present",
             img: yalemedicine,
             title: "OBE Clinical Study",
-            desc: " I worked with an MD/MS student at the Yale School of Medicine on a clincal study. We simulated out-of-body experiences (a common hallucination) in virtual reality! ",
+            desc: " I coauthored a peer-reviewed publicaiton with a team at the Yale School of Medicine. We simulated out-of-body experiences (a common hallucination) in virtual reality!",
             link: "https://github.com/Maxohm491/OBEProject",
             link_name: "Code",
         },
