@@ -27,9 +27,11 @@ const Projects = () => {
             date: "April 2024 - Present",
             img: yalemedicine,
             title: "OBE Clinical Study",
-            desc: " I coauthored a peer-reviewed publicaiton with a team at the Yale School of Medicine. We simulated out-of-body experiences (a common hallucination) in virtual reality!",
+            desc: " I coauthored a peer-reviewed publicaiton with a team at the Yale School of Medicine. We simulated out-of-body experiences (a common hallucination) in virtual reality.",
             link: "https://github.com/Maxohm491/OBEProject",
             link_name: "Code",
+            second_link:"../assets/files/Poster.pdf",
+            second_link_name:"Poster"
         },
         {
             date: "July 2022 - August 2022",
@@ -72,6 +74,9 @@ const Projects = () => {
                             <img src={project.img} alt={project.title} />
                             <div className="flex absolute left-0 right-0 top-0 bottom-0 mx-auto bg-primary opacity-0 duration-500 justify-center flex-col hover:opacity-95 ">
                                 <p className="text-center font-bold px-2 text-black">
+                                    {project.title}
+                                </p>
+                                <p className="text-center font-bold px-2 text-black">
                                     {project.date}
                                 </p>
                                 <p className="py-4 text-left px-2 text-black">
@@ -87,12 +92,15 @@ const Projects = () => {
                                     >
                                         {project.link_name}
                                     </a>
-                                    {/* <a
-                                        // href={project.link}
-                                        className="bg-accent border-2 border-[#7477FF] text-white px-5 py-2 hover:bg-transparent duration-250"
-                                    >
-                                        Info
-                                    </a> */}
+                                    {project.second_link && (
+                                        <a
+                                            href={require("../assets/files/Poster.pdf")} download="Poster"
+                                            target="_blank"
+                                            className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-5 py-2 font-bold"
+                                        >
+                                            {project.second_link_name}
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>

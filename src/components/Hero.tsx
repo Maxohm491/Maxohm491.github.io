@@ -1,5 +1,5 @@
 import React from "react";
-import pfp from "../assets/circle.png";
+import pfp from "../assets/me2-modified.png";
 
 import {
     AiOutlineGithub,
