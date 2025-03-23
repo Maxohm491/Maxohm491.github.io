@@ -5,6 +5,7 @@ import {
     AiOutlineGithub,
     AiOutlineLinkedin,
 } from "react-icons/ai";
+import { FaGoodreadsG } from "react-icons/fa";
 
 const Hero = () => {
     return (
@@ -28,13 +29,20 @@ const Hero = () => {
                             {" "}
                             <AiOutlineGithub size={40} />{" "}
                         </a>
-                        {/* <a
-                            href="https://www.maxohm.com/"
+                        <a
+                            href="www.linkedin.com/in/max-ohm-974356358"
                             className="pr-4 inline-block text-accent hover:text-[#fe93de]"
                         >
                             {" "}
                             <AiOutlineLinkedin size={40} />{" "}
-                        </a> */}
+                        </a>
+                        <a
+                            href="https://www.goodreads.com/user/show/72820993-max-ohm"
+                            className="pr-4 inline-block text-accent hover:text-[#fe93de]"
+                        >
+                            {" "}
+                            <FaGoodreadsG size={40} />{" "}
+                        </a>
                     </div>
 
                     <div className="py-10">
