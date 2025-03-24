@@ -7,8 +7,10 @@ const Header = () => {
 
     const handleToggle = () => setToggle(!toggle);
 
+    const handleClose = () => setToggle(false);
+
     return (
-        <header className="flex justify-between px-5 py-2 bg-secondary text-black fixed w-full z-10">
+        <header className="flex justify-between px-5 py-2 bg-secondary fixed w-full z-10">
             {/* bg-secondary */}
             <a href="/" className="logo text-2xl font-bold text-black">
                 Max Ohm
@@ -18,18 +20,18 @@ const Header = () => {
             <nav className="hidden md:block">
                 <ul className="flex">
                     <li>
-                        <a className="font-bold hover:text-[#fe93de]" href="/#about">About</a>
+                        <a className="font-bold hover:text-[#fe93de]" href="/#about" onClick={handleClose}>About</a>
                     </li>
                     <li>
-                        <a className="font-bold hover:text-[#fe93de]" href="/#projects">Projects</a>
+                        <a className="font-bold hover:text-[#fe93de]" href="/#projects" onClick={handleClose}>Projects</a>
                     </li>
                     <li>
-                        <a className="font-bold hover:text-[#fe93de]" href="/#contact">Contact</a>
+                        <a className="font-bold hover:text-[#fe93de]" href="/#contact" onClick={handleClose}>Contact</a>
                     </li>
                     <li>
-                        <a className="font-bold hover:text-[#fe93de]" target="_blank" href={require("../assets/files/Resume.pdf")} download="Max's Resume"> {/*href="#resume -link"*/}
+                        <a className="font-bold hover:text-[#fe93de]" target="_blank" href={require("../assets/files/Resume.pdf")} download="Max's Resume" onClick={handleClose}>
                             <span className="inline-flex space-x-2 items-center">
-                             <IoMdDownload /> <span> Resume </span> 
+                                <IoMdDownload /> <span> Resume </span>
                             </span>
                         </a>
 
@@ -43,16 +45,20 @@ const Header = () => {
             >
                 <ul className="flex flex-col bg-secondary">
                     <li>
-                        <a className="font-bold hover:text-[#fe93de]" href="/#about">About</a>
+                        <a className="font-bold hover:text-[#fe93de]" href="/#about" onClick={handleClose}>About</a>
                     </li>
                     <li>
-                        <a className="font-bold hover:text-[#fe93de]" href="/#projects">Projects</a>
+                        <a className="font-bold hover:text-[#fe93de]" href="/#projects" onClick={handleClose}>Projects</a>
                     </li>
                     <li>
-                        <a className="font-bold hover:text-[#fe93de]" href="/#contact">Contact</a>
+                        <a className="font-bold hover:text-[#fe93de]" href="/#contact" onClick={handleClose}>Contact</a>
                     </li>
                     <li>
-                        <a className="font-bold hover:text-[#fe93de]" href="/#resume">Resume</a>
+                        <a className="font-bold hover:text-[#fe93de]" target="_blank" href={require("../assets/files/Resume.pdf")} download="Max's Resume" onClick={handleClose}>
+                            <span className="inline-flex space-x-2 items-center">
+                                <IoMdDownload /> <span> Resume </span>
+                            </span>
+                        </a>
                     </li>
                 </ul>
             </nav>
