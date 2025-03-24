@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <header className="flex justify-between px-5 py-2 bg-secondary fixed w-full z-10">
             {/* bg-secondary */}
-            <a href="/" className="logo text-2xl font-bold text-black">
+            <a href="/" className="logo text-2xl font-bold text-black hover:text-[#fe93de]">
                 Max Ohm
             </a>
 
@@ -43,7 +43,7 @@ const Header = () => {
             <nav
                 className={!toggle ? "mobile-nav left-[-100%] bg-secondary" : "mobile-nav left-0 bg-secondary"}
             >
-                <ul className="flex flex-col bg-secondary">
+                <ul className="flex flex-col bg-primary p-6 space-y-6">
                     <li>
                         <a className="font-bold hover:text-[#fe93de]" href="/#about" onClick={handleClose}>About</a>
                     </li>

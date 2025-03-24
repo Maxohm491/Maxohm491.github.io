@@ -15,11 +15,6 @@ const Hero = () => {
                     <h1 className="text-4xl lg:text-8xl">
                         Hi, <br />I'm Max. <br />
                     </h1>
-
-                    {/* <p className="py-5">
-                        Welcome to my personal website! I'm a passionate 
-                    </p> */}
-
                     <div className="flex py-5 ">
                         <a
                             href="https://github.com/Maxohm491"
@@ -30,7 +25,7 @@ const Hero = () => {
                             <AiOutlineGithub size={40} />{" "}
                         </a>
                         <a
-                            href="www.linkedin.com/in/max-ohm-974356358"
+                            href="https://www.linkedin.com/in/max-ohm-974356358"
                             className="pr-4 inline-block text-accent hover:text-[#fe93de]"
                         >
                             {" "}
