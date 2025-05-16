@@ -3,6 +3,7 @@ import snakefeet from "../assets/snakefeet.png";
 import itchio from "../assets/itchlogo.png";
 import yalemedicine from "../assets/yalemedlogo.png";
 import grassroot from "../assets/grassroot.png";
+import { Link } from "react-router-dom";
 import jhuapl from "../assets/jhuapl.png";
 
 const Projects = () => {
@@ -12,8 +13,10 @@ const Projects = () => {
             img: snakefeet,
             title: "Snakefeet Studios",
             desc: " I programmed at 11 person indie game studio, using Unity and focusing mainly on scalable multiplayer systems. ",
-            link: "https://www.snakefeet.io/",
-            link_name: "Website",
+            // link: "https://www.snakefeet.io/",
+            // link_name: "Website",
+            route: "/projects/dlang-engine",
+            route_name: "Test",
         },
         {
             date: "",
@@ -30,8 +33,8 @@ const Projects = () => {
             desc: " I coauthored a peer-reviewed publicaiton with a team at the Yale School of Medicine. We simulated out-of-body experiences (a common hallucination) in virtual reality.",
             link: "https://github.com/Maxohm491/OBEProject",
             link_name: "Code",
-            second_link:"../assets/files/Poster.pdf",
-            second_link_name:"Poster"
+            second_link: "../assets/files/Poster.pdf",
+            second_link_name: "Poster"
         },
         {
             date: "July 2022 - August 2022",
@@ -53,24 +56,21 @@ const Projects = () => {
 
     return (
         <section className="bg-primary text-black px-5 py-32" id="projects">
+
             <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
                 {/* <div className="about-info mb-5"> */}
-                    <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-accent pb-2">
-                        My Work
-                    </h2>
+                <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-accent pb-2">
+                    My Work
+                </h2>
 
-                    {/* <p className="pb-5">
-                        These are some of the projects that I've been a part of!
-                    </p>
-                </div> */}
-
-                <div className="about-img"></div>
+                {/* <div className="about-img"></div> */}
             </div>
 
             <div className="projects container mx-auto grid md:grid-cols-3 gap-10">
                 {projects.map((project, i) => {
                     return (
                         <div className="relative flex justify-center items-center" key={i}>
+
                             <img src={project.img} alt={project.title} />
                             <div className="flex absolute left-0 right-0 top-0 bottom-0 mx-auto bg-primary opacity-0 duration-500 justify-center flex-col hover:opacity-95 ">
                                 <p className="text-center font-bold px-2 text-black">
@@ -82,16 +82,32 @@ const Projects = () => {
                                 <p className="py-4 text-left px-2 text-black">
                                     {project.desc}
                                 </p>
+                                {/* <Link to="/projects/engine-x">
+                <div className="bg-gray-100 p-4 rounded-lg hover:shadow">
+                    <h3 className="text-xl font-semibold">Engine X</h3>
+                    <p className="text-sm text-gray-600">A C++ game engine with SDL/OpenGL...</p>
+                </div>
+            </Link> */}
 
                                 <div className="mx-auto space-x-3">
-                                    <a
-                                        href={project.link}
-                                        target="_blank"
-                                        // className="bg-accent border-2 border-[#7477FF] text-black px-5 py-2 hover:bg-transparent font-bold"
-                                        className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-5 py-2 font-bold"
-                                    >
-                                        {project.link_name}
-                                    </a>
+                                    {project.route && (
+                                        <Link to={project.route}>
+                                            <div className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-5 py-2 font-bold">
+                                                {project.route_name}
+                                            </div>
+
+                                        </Link>
+                                    )}
+                                    {project.link && (
+                                        <a
+                                            href={project.link}
+                                            target="_blank"
+                                            // className="bg-accent border-2 border-[#7477FF] text-black px-5 py-2 hover:bg-transparent font-bold"
+                                            className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-5 py-2 font-bold"
+                                        >
+                                            {project.link_name}
+                                        </a>
+                                    )}
                                     {project.second_link && (
                                         <a
                                             href={require("../assets/files/Poster.pdf")} download="Poster"

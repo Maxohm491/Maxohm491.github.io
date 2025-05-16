@@ -25,7 +25,7 @@ const Hero = () => {
                             <AiOutlineGithub size={40} />{" "}
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/max-ohm-974356358"
+                            href="https://www.linkedin.com/in/max-ohm"
                             className="pr-4 inline-block text-accent hover:text-[#fe93de]"
                         >
                             {" "}

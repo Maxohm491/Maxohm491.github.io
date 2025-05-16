@@ -80,16 +80,7 @@ nav li a {
   @apply px-4 py-5 text-lg;
 }
 
-/* .custom-position {
-  object-position: 60% -3px;
-} */
-
 nav li a:hover {
   color: #7477FF;
 }
 
-/* hero */
-/* h1 {
-  font-family: 'Pacifico', cursive;
-  line-height: 1.5 !important;
-} */

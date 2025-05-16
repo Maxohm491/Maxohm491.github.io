@@ -1,40 +1,42 @@
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import Header from "./components/Header";
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
-import React from 'react';
+import Home from './components/Home';
+import GameEngine from './project_pages/GameEngine';
+
 
 function App() {
+  return (
+    <Router>
+      <MainRoutes />
+    </Router>
+  );
+}
+
+// Separate component to scroll with hashes
+function MainRoutes() {
+  const location = useLocation();
   useEffect(() => {
     const scrollToHashElement = () => {
       const { hash } = window.location;
       const elementToScroll = document.getElementById(hash?.replace("#", ""));
 
       if (!elementToScroll) return;
-
-      elementToScroll.scrollIntoView();
+      elementToScroll.scrollIntoView({ behavior: "smooth" });
     };
-
 
     scrollToHashElement();
     window.addEventListener("hashchange", scrollToHashElement);
-    return window.removeEventListener("hashchange", scrollToHashElement);
-  });
+    return () => window.removeEventListener("hashchange", scrollToHashElement);
+  }, [location]);
 
   return (
-    <>
-      <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />  
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/projects/dlang-engine" element={<GameEngine />} />
+    </Routes>
   );
 }
 
