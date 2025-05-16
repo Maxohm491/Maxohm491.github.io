@@ -7,10 +7,6 @@ const Contact = () => {
         <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[200px] mx-auto border-accent pb-2">
           Contact Me
         </h2>
-        <p>
-          Feel free to reach out with any inquiries!
-        </p>
-
         <p className="py-2">
           <span className="font-bold">Email:</span> maxdemohm@gmail.com
         </p>

@@ -13,10 +13,10 @@ const About = () => {
                         Welcome to my website!
                     </p>
                     <p className="pb-5">
-                        I'm a passionate student with a broad interest in anything related to computer science or mathematics. My primary focus has been on backend architecture, cybersecurity, and game development. I thought I'd explore web development a bit, which has led to the creation of this site. Feel free to reach out via the contact information below!
+                        I'm a student with a broad interest in anything related to computer science or mathematics. My primary focus has been on backend architecture, cybersecurity, and game development. I thought I'd explore web development a bit, which has led to the creation of this site. Feel free to reach out via the contact information below!
                     </p>
                     <p>
-                        Currently, I'm pursuing a B.S. in Computer Science & Mathematics at Yale University. In my spare time I read, work on personal projects, or go on outdoor trips with the Yale Climbing Team.
+                        Currently, I'm pursuing a combined B.S./M.S. in Computer Science at Yale University. In my spare time I read, work on personal projects, and go on outdoor rock climbing trips.
                     </p>
                 </div>
 

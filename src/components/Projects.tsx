@@ -54,15 +54,15 @@ const Projects = () => {
     return (
         <section className="bg-primary text-black px-5 py-32" id="projects">
             <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
-                <div className="about-info mb-5">
+                {/* <div className="about-info mb-5"> */}
                     <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-accent pb-2">
                         My Work
                     </h2>
 
-                    <p className="pb-5">
+                    {/* <p className="pb-5">
                         These are some of the projects that I've been a part of!
                     </p>
-                </div>
+                </div> */}
 
                 <div className="about-img"></div>
             </div>
