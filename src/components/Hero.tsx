@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import pfp from "../assets/me2-modified.png";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { FaGoodreadsG } from "react-icons/fa";
+import { useFadeInOnScroll } from "../hooks/useFadeInOnScroll";
 
 const TITLES = [
     "Hi,",
@@ -29,6 +30,9 @@ const Hero = () => {
     // Dynamically set font size so all lines fit in the container without overflow
     const containerRef = React.useRef<HTMLHeadingElement>(null);
     const [dynamicFontSize, setDynamicFontSize] = useState(56); // px, initial guess for text-4xl
+
+    // Fade-in on scroll
+    const [ref, visible] = useFadeInOnScroll();
 
     useEffect(() => {
         if (!containerRef.current) return;
@@ -90,7 +94,10 @@ const Hero = () => {
     const placeholderLines = Array.from({ length: maxLines - lines.length }, () => "");
 
     return (
-        <section className="bg-primary px-3 sm:px-5 text-black py-16 sm:py-32 fade-in">
+        <section
+            ref={ref}
+            className={`bg-primary px-3 sm:px-5 text-black py-16 sm:py-32 transition-opacity duration-700 ${visible ? "fade-in" : "opacity-0 translate-y-8"}`}
+        >
             <div className="container mx-auto flex flex-col md:grid md:grid-cols-2 items-center justify-center md:justify-between gap-8">
                 <div className="pb-5 md:pb-0 w-full">
                     <h1

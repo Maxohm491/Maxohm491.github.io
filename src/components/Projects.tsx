@@ -6,8 +6,11 @@ import yalemedicine from "../assets/yalemedlogo.png";
 import grassroot from "../assets/grassroot.png";
 import { Link } from "react-router-dom";
 import jhuapl from "../assets/jhuapl.png";
+import { useFadeInOnScroll } from "../hooks/useFadeInOnScroll";
 
 const Projects = () => {
+    const [ref, visible] = useFadeInOnScroll();
+
     const projects = [
         {
             date: "January 2025 - July 2025",
@@ -67,7 +70,11 @@ const Projects = () => {
 
 
     return (
-        <section className="bg-primary text-black px-3 sm:px-5 py-16 sm:py-32" id="projects">
+        <section
+            ref={ref}
+            className={`bg-primary text-black px-3 sm:px-5 py-16 sm:py-32 transition-opacity duration-700 ${visible ? "fade-in" : "opacity-0 translate-y-8"}`}
+            id="projects"
+        >
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center md:justify-between">
                 <h2 className="text-3xl sm:text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-accent pb-2 fade-in">
                     My Work
@@ -92,7 +99,6 @@ const Projects = () => {
                             <p className="text-xs sm:text-sm text-gray-500 mb-2">{project.date}</p>
                             <p className="py-2 text-left text-black flex-1">{project.desc}</p>
                             <div className="flex flex-wrap gap-2 mt-4">
-
                                 {project.link && (
                                     <a
                                         href={project.link}

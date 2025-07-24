@@ -1,8 +1,15 @@
 import React from "react";
+import { useFadeInOnScroll } from "../hooks/useFadeInOnScroll";
 
 const About = () => {
+    const [ref, visible] = useFadeInOnScroll();
+
     return (
-        <section className="bg-secondary text-black px-3 sm:px-5 py-16 sm:py-32 fade-in" id="about">
+        <section
+            ref={ref}
+            className={`bg-secondary text-black px-3 sm:px-5 py-16 sm:py-32 transition-opacity duration-700 ${visible ? "fade-in" : "opacity-0 translate-y-8"}`}
+            id="about"
+        >
             <div className="container mx-auto flex justify-end">
                 <div className="about-info border-l-4 border-accent pl-4 max-w-2xl w-full text-left md:border-l-0 md:border-r-4 md:pl-0 md:pr-6">
                     <h2 className="text-3xl sm:text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-accent pb-2 md:ml-auto md:text-right">
