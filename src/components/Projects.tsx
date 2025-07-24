@@ -1,5 +1,6 @@
 import React from "react";
 import snakefeet from "../assets/snakefeet.png";
+import ohmengine from "../assets/ohmengine.png";
 import itchio from "../assets/itchlogo.png";
 import yalemedicine from "../assets/yalemedlogo.png";
 import grassroot from "../assets/grassroot.png";
@@ -9,14 +10,24 @@ import jhuapl from "../assets/jhuapl.png";
 const Projects = () => {
     const projects = [
         {
-            date: "July 2023 - May 2024",
-            img: snakefeet,
-            title: "Snakefeet Studios",
-            desc: " I programmed at 11 person indie game studio, using Unity and focusing mainly on scalable multiplayer systems. ",
-            // link: "https://www.snakefeet.io/",
-            // link_name: "Website",
-            route: "/projects/dlang-engine",
-            route_name: "Test",
+            date: "January 2025 - July 2025",
+            img: ohmengine,
+            title: "Ohm Engine",
+            desc: "A lightweight and flexible 2D game engine built by me, from scratch, with Dlang. It is fully functional and open source, with a focus on performance and ease of use. I've already used it for several projects, all linked below.",
+            link: "https://github.com/Maxohm491/OhmEngine",
+            link_name: "Code",
+            third_link: "https://www.youtube.com/watch?v=rEVy8WC1mtE",
+            third_link_name: "Demo"
+        },
+        {
+            date: "April 2024 - May 2025",
+            img: yalemedicine,
+            title: "OBE Clinical Study",
+            desc: " I coauthored a peer-reviewed publication with a team at the Yale School of Medicine. We simulated out-of-body experiences (a common hallucination) in virtual reality.",
+            link: "https://github.com/Maxohm491/OBEProject",
+            link_name: "Code",
+            second_link: "../assets/files/Poster.pdf",
+            second_link_name: "Poster"
         },
         {
             date: "",
@@ -27,14 +38,14 @@ const Projects = () => {
             link_name: "Live Games",
         },
         {
-            date: "April 2024 - Present",
-            img: yalemedicine,
-            title: "OBE Clinical Study",
-            desc: " I coauthored a peer-reviewed publicaiton with a team at the Yale School of Medicine. We simulated out-of-body experiences (a common hallucination) in virtual reality.",
-            link: "https://github.com/Maxohm491/OBEProject",
-            link_name: "Code",
-            second_link: "../assets/files/Poster.pdf",
-            second_link_name: "Poster"
+            date: "July 2023 - May 2024",
+            img: snakefeet,
+            title: "Snakefeet Studios",
+            desc: " I programmed at 11 person indie game studio, using Unity and focusing mainly on scalable multiplayer systems. ",
+            link: "https://www.snakefeet.io/",
+            link_name: "Website"
+            // route: "/projects/dlang-engine",
+            // route_name: "Test",
         },
         {
             date: "July 2022 - August 2022",
@@ -43,15 +54,15 @@ const Projects = () => {
             desc: " I completed an 8-week internship at the Johns Hopkins University Applied Physics Laboratory, where I worked in the IT Service Desk division and developed an internal log summarization tool. ",
             link: "https://www.jhuapl.edu/",
             link_name: "Info",
-        },
-        {
-            date: "May 2024 - Present",
-            img: grassroot,
-            title: "Grassroot",
-            desc: " I helped develop an iOS app for a startup, designed to streamline scheduling and business management for small home service companies. ",
-            link: "https://www.maxohm.com",
-            link_name: "Website",
         }
+        // {
+        //     date: "May 2024 - Present",
+        //     img: grassroot,
+        //     title: "Grassroot",
+        //     desc: " I helped develop an iOS app for a startup, designed to streamline scheduling and business management for small home service companies. ",
+        //     link: "https://www.maxohm.com",
+        //     link_name: "Website",
+        // }
     ];
 
     return (
@@ -90,14 +101,14 @@ const Projects = () => {
             </Link> */}
 
                                 <div className="mx-auto space-x-3">
-                                    {project.route && (
+                                    {/* {project.route && (
                                         <Link to={project.route}>
                                             <div className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-5 py-2 font-bold">
                                                 {project.route_name}
                                             </div>
 
                                         </Link>
-                                    )}
+                                    )} */}
                                     {project.link && (
                                         <a
                                             href={project.link}
@@ -106,6 +117,16 @@ const Projects = () => {
                                             className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-5 py-2 font-bold"
                                         >
                                             {project.link_name}
+                                        </a>
+                                    )}
+                                    {project.third_link && (
+                                        <a
+                                            href={project.third_link}
+                                            target="_blank"
+                                            // className="bg-accent border-2 border-[#7477FF] text-black px-5 py-2 hover:bg-transparent font-bold"
+                                            className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-5 py-2 font-bold"
+                                        >
+                                            {project.third_link_name}
                                         </a>
                                     )}
                                     {project.second_link && (
