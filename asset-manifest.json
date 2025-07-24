@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.46426115.css",
-    "main.js": "/static/js/main.1c162ce8.js",
+    "main.js": "/static/js/main.d6375849.js",
     "static/js/453.f87592ff.chunk.js": "/static/js/453.f87592ff.chunk.js",
     "static/media/me2-modified.png": "/static/media/me2-modified.21586d6ebcb9bac2a671.png",
     "static/media/snakefeet.png": "/static/media/snakefeet.c38874d82dc725094fdf.png",
@@ -12,11 +12,11 @@
     "static/media/yalemedlogo.png": "/static/media/yalemedlogo.7f4b428e8bc9d5648a3b.png",
     "index.html": "/index.html",
     "main.46426115.css.map": "/static/css/main.46426115.css.map",
-    "main.1c162ce8.js.map": "/static/js/main.1c162ce8.js.map",
+    "main.d6375849.js.map": "/static/js/main.d6375849.js.map",
     "453.f87592ff.chunk.js.map": "/static/js/453.f87592ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.46426115.css",
-    "static/js/main.1c162ce8.js"
+    "static/js/main.d6375849.js"
   ]
 }
