@@ -65,84 +65,69 @@ const Projects = () => {
         // }
     ];
 
-    return (
-        <section className="bg-primary text-black px-5 py-32" id="projects">
 
-            <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
-                {/* <div className="about-info mb-5"> */}
-                <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-accent pb-2">
+    return (
+        <section className="bg-primary text-black px-3 sm:px-5 py-16 sm:py-32" id="projects">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center md:justify-between">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-accent pb-2 fade-in">
                     My Work
                 </h2>
-
-                {/* <div className="about-img"></div> */}
             </div>
+            <div className="projects container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+                {projects.map((project, i) => (
+                    <div
+                        className="relative flex flex-col justify-between items-center bg-white rounded-xl shadow-lg fade-in border-2 border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-[#fe93de] z-10 hover:z-20 will-change-transform"
+                        key={i}
+                        style={{ animationDelay: `${i * 0.15 + 0.2}s` }}
+                    >
+                        <div className="flex justify-center items-center w-full bg-gray-100" style={{ minHeight: "8rem" }}>
+                            <img
+                                src={project.img}
+                                alt={project.title}
+                                className="w-auto h-24 sm:h-32 max-h-40 max-w-full object-contain"
+                            />
+                        </div>
+                        <div className="flex flex-col p-5 h-full w-full">
+                            <p className="text-lg sm:text-xl font-bold text-black mb-1">{project.title}</p>
+                            <p className="text-xs sm:text-sm text-gray-500 mb-2">{project.date}</p>
+                            <p className="py-2 text-left text-black flex-1">{project.desc}</p>
+                            <div className="flex flex-wrap gap-2 mt-4">
 
-            <div className="projects container mx-auto grid md:grid-cols-3 gap-10">
-                {projects.map((project, i) => {
-                    return (
-                        <div className="relative flex justify-center items-center" key={i}>
-
-                            <img src={project.img} alt={project.title} />
-                            <div className="flex absolute left-0 right-0 top-0 bottom-0 mx-auto bg-primary opacity-0 duration-500 justify-center flex-col hover:opacity-95 ">
-                                <p className="text-center font-bold px-2 text-black">
-                                    {project.title}
-                                </p>
-                                <p className="text-center font-bold px-2 text-black">
-                                    {project.date}
-                                </p>
-                                <p className="py-4 text-left px-2 text-black">
-                                    {project.desc}
-                                </p>
-                                {/* <Link to="/projects/engine-x">
-                <div className="bg-gray-100 p-4 rounded-lg hover:shadow">
-                    <h3 className="text-xl font-semibold">Engine X</h3>
-                    <p className="text-sm text-gray-600">A C++ game engine with SDL/OpenGL...</p>
-                </div>
-            </Link> */}
-
-                                <div className="mx-auto space-x-3">
-                                    {/* {project.route && (
-                                        <Link to={project.route}>
-                                            <div className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-5 py-2 font-bold">
-                                                {project.route_name}
-                                            </div>
-
-                                        </Link>
-                                    )} */}
-                                    {project.link && (
-                                        <a
-                                            href={project.link}
-                                            target="_blank"
-                                            // className="bg-accent border-2 border-[#7477FF] text-black px-5 py-2 hover:bg-transparent font-bold"
-                                            className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-5 py-2 font-bold"
-                                        >
-                                            {project.link_name}
-                                        </a>
-                                    )}
-                                    {project.third_link && (
-                                        <a
-                                            href={project.third_link}
-                                            target="_blank"
-                                            // className="bg-accent border-2 border-[#7477FF] text-black px-5 py-2 hover:bg-transparent font-bold"
-                                            className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-5 py-2 font-bold"
-                                        >
-                                            {project.third_link_name}
-                                        </a>
-                                    )}
-                                    {project.second_link && (
-                                        <a
-                                            href={require("../assets/files/Poster.pdf")} download="Poster"
-                                            target="_blank"
-                                            className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-5 py-2 font-bold"
-                                        >
-                                            {project.second_link_name}
-                                        </a>
-                                    )}
-                                </div>
+                                {project.link && (
+                                    <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-4 py-2 font-bold transition"
+                                    >
+                                        {project.link_name}
+                                    </a>
+                                )}
+                                {project.third_link && (
+                                    <a
+                                        href={project.third_link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-4 py-2 font-bold transition"
+                                    >
+                                        {project.third_link_name}
+                                    </a>
+                                )}
+                                {project.second_link && (
+                                    <a
+                                        href={require("../assets/files/Poster.pdf")}
+                                        download="Poster"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-4 py-2 font-bold transition"
+                                    >
+                                        {project.second_link_name}
+                                    </a>
+                                )}
                             </div>
                         </div>
-                    );
-                })}
+                    </div>
+                ))}
             </div>
         </section>
     );
