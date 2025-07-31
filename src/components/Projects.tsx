@@ -2,9 +2,8 @@ import React from "react";
 import snakefeet from "../assets/snakefeet.png";
 import ohmengine from "../assets/ohmengine.png";
 import itchio from "../assets/itchlogo.png";
+import cars from "../assets/cars.png";
 import yalemedicine from "../assets/yalemedlogo.png";
-import grassroot from "../assets/grassroot.png";
-import { Link } from "react-router-dom";
 import jhuapl from "../assets/jhuapl.png";
 import { useFadeInOnScroll } from "../hooks/useFadeInOnScroll";
 
@@ -23,13 +22,23 @@ const Projects = () => {
             third_link_name: "Demo"
         },
         {
+            date: "March 2025 - May 2025",
+            img: cars,
+            title: "Machine Learning Model for 3D Shape Generation",
+            desc: "I conducted a research project with two other students. We designed a novel deep learning framework for 3D shape generation using signed distance functions (SDFs). The model achieves low reconstruction error and produces plausible, diverse shapes from sampled latent vectors—see the paper below for full results.",
+            second_link: "/files/SDFgeneration.pdf",
+            second_link_name: "Paper",
+            third_link: "https://www.youtube.com/watch?v=5_MrpoI_S1Q",
+            third_link_name: "Video Walkthrough",
+        },
+        {
             date: "April 2024 - May 2025",
             img: yalemedicine,
             title: "OBE Clinical Study",
             desc: " I coauthored a peer-reviewed publication with a team at the Yale School of Medicine. We simulated out-of-body experiences (a common hallucination) in virtual reality.",
             link: "https://github.com/Maxohm491/OBEProject",
             link_name: "Code",
-            second_link: "../assets/files/Poster.pdf",
+            second_link: "/files/Poster.pdf",
             second_link_name: "Poster"
         },
         {
@@ -109,6 +118,17 @@ const Projects = () => {
                                         {project.link_name}
                                     </a>
                                 )}
+                                {project.second_link && (
+                                    <a
+                                        href={project.second_link}
+                                        download={project.second_link_name}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-4 py-2 font-bold transition"
+                                    >
+                                        {project.second_link_name}
+                                    </a>
+                                )}
                                 {project.third_link && (
                                     <a
                                         href={project.third_link}
@@ -117,17 +137,6 @@ const Projects = () => {
                                         className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-4 py-2 font-bold transition"
                                     >
                                         {project.third_link_name}
-                                    </a>
-                                )}
-                                {project.second_link && (
-                                    <a
-                                        href={require("../assets/files/Poster.pdf")}
-                                        download="Poster"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-4 py-2 font-bold transition"
-                                    >
-                                        {project.second_link_name}
                                     </a>
                                 )}
                             </div>
