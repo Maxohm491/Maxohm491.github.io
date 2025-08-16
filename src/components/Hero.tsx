@@ -149,9 +149,35 @@ const Hero = () => {
                         {/* ...social links... */}
                     </div>
                     <div className="py-6 sm:py-10">
+                        <div className="flex py-5 flex-wrap gap-4 mb-6">
+                            <a
+                                href="https://github.com/Maxohm491"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-3xl text-[#ffafe7] hover:text-[#fe93de] transition-colors duration-300"
+                            >
+                                <AiOutlineGithub />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/max-ohm/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-3xl text-[#ffafe7] hover:text-[#fe93de] transition-colors duration-300"
+                            >
+                                <AiOutlineLinkedin />
+                            </a>
+                            <a
+                                href="https://www.goodreads.com/user/show/72820993-max-ohm"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-3xl text-[#ffafe7] hover:text-[#fe93de] transition-colors duration-300"
+                            >
+                                <FaGoodreadsG />
+                            </a>
+                        </div>
                         <a
                             href="/#projects"
-                            className="hover:bg-[#fe93de] hover:border-[#fe93de] bg-accent border-2 border-accent rounded text-black px-6 py-3 sm:px-8 sm:py-5 font-bold shadow-lg transition text-base sm:text-lg"
+                            className="hover:bg-[#fe93de] bg-accent border-2 border-accent rounded text-black px-6 py-3 sm:px-8 sm:py-5 font-bold shadow-lg transition text-base sm:text-lg"
                         >
                             My Work
                         </a>
